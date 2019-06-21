@@ -21,6 +21,30 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+  - name: "locations"
+    label: "Locations"
+    folder: "src/pages/locations"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "location"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Header", name: "header", widget: image}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "providers"
+    label: "Providers"
+    folder: "src/pages/providers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "provider"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Photo", name: "photo", widget: image}
+      - {label: "Bio", name: "bio", widget: "markdown"}
+
   - name: "pages"
     label: "Pages"
     files:
