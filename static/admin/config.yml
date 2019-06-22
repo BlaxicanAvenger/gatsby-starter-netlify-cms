@@ -30,7 +30,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "location"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: "Header", name: "header", widget: image}
+      - {label: "Full_image", name: "full_image", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "providers"
