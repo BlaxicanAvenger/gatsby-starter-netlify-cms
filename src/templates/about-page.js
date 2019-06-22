@@ -91,6 +91,7 @@ export const aboutPageQuery = graphql`
         title
         description
         full_image {
+          alt
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
