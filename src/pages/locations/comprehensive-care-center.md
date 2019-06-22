@@ -7,7 +7,7 @@ description: >-
   the supervision of their physicians. Physical, speech and occupational
   therapies are available on site. A comprehensive recreation and social program
   with a wide variety of preferences are available.
-header: /img/comprehensivecarecenter-sm.jpg
+full_image: /img/comprehensivecarecenter-sm.jpg
 ---
 ## Partnering with You and Your Family
 
