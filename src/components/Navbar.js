@@ -39,7 +39,7 @@ const Navbar = class extends React.Component {
         <div className="container">
             <div className="d-flex order-lg-1">
               <Link to="/" className="nav-link" title="Logo">
-                <img src={logo} alt="Lompoc Valley Medical Center"  className="img-fluid" />
+                <img src={logo} alt="Lompoc Valley Medical Center"  className="img-fluid" style={{ width: '88px' }} />
               </Link>
             </div>
             <div className="navbar-collapse justify-content-between navMenu order-lg-2 collapse">
@@ -52,7 +52,7 @@ const Navbar = class extends React.Component {
             </div>
         </div>
     </nav>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light py-0 primary-menu" style={{ box-shadow: '0px 20px 20px rgba(0, 0, 0, .25)',  border-top: '1px solid #ddd' }}>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light py-0 primary-menu">
         <div className="container">
           <div className="navbar-collapse navMenu collapse">
             <ul className="navbar-nav nav-tabs border-0">
