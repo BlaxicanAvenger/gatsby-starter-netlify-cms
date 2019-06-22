@@ -6,19 +6,19 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const LocationTemplate = ({
-  content,
-  contentComponent,
-  description,
-  title,
-  helmet,
+export const LocationTemplate = ({  
+    content,  
+    contentComponent,  
+    description,  
+    title,  
+    helmet, 
 }) => {
   const LocationContent = contentComponent || Content
 
   return (
-    {helmet || ''}
     <section className="header-3 p-0">
-      <img src="assets/img/header-8.jpg" alt="Image" className="bg-image">
+        {helmet || ''}
+      <img className="bg-image" />
       <div className="container">
         <div className="row no-gutters justify-content-center justify-content-md-start">
           <div className="col-10 col-md-8 col-lg-7 col-xl-6 bg-white spacer-y-4 height-60 height-md-70">
@@ -39,7 +39,7 @@ export const LocationTemplate = ({
       <div className="container">
         <div className="row text-center mb-4">
           <div className="col">
-            <span className="h2 d-block">A bold choice for your business.</span>
+            <span className="h2 d-block"></span>
           </div>
         </div>
         <div className="row">
