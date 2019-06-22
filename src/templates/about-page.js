@@ -11,9 +11,7 @@ export const AboutPageTemplate = ({ title, description, content, fullImage, cont
   return (
     <div>
       <section className="bg-dark">
-      <img src={fullImage.childImageSharp
-                      ? fullImage.childImageSharp.fluid.src
-                      : fullImage} alt={title} className="bg-image opacity-50" />
+      <img src={fullImage.src} alt={title} className="bg-image opacity-50" />
         <div className="container height-lg-30">
           <div className="row">
             <div className="col-md-8 col-lg-7 col-xl-6">

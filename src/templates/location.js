@@ -20,7 +20,7 @@ export const LocationTemplate = ({
     <div>
         {helmet || ''}
         <section className="header-3 p-0">
-        <img src={fullImage} alt={title} className="bg-image" />
+        <img src={fullImage ? fullImage.src : fullImage} alt={title} className="bg-image" />
         <div className="container">
             <div className="row no-gutters justify-content-center justify-content-md-start">
             <div className="col-10 col-md-8 col-lg-7 col-xl-6 bg-white spacer-y-4 height-60 height-md-70">
