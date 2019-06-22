@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 import { Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const AboutPageTemplate = ({ title, description, content, fullImage, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -12,7 +11,7 @@ export const AboutPageTemplate = ({ title, description, content, fullImage, cont
   return (
     <div>
       <section className="bg-dark">
-      <PreviewCompatibleImage imageInfo={fullImage} alt={title} className="bg-image opacity-50" />
+      <img src={fullImage} alt={title} className="bg-image opacity-50" />
         <div className="container height-lg-30">
           <div className="row">
             <div className="col-md-8 col-lg-7 col-xl-6">
@@ -90,16 +89,14 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         description
-        full_image  {
-          alt
-          image {
-            childImageSharp {
-              fluid(maxWidth: 1200, quality: 72) {
-                ...GatsbyImageSharpFluid
-              }
+        full_image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
+      }
     }
   }
 `
