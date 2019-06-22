@@ -69,7 +69,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        fullImage={frontmatter.full_image}
+        fullImage={post.frontmatter.full_image}
         content={post.html}
       />
     </Layout>
