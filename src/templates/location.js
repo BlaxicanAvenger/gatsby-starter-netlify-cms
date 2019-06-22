@@ -16,15 +16,44 @@ export const LocationTemplate = ({
   const LocationContent = contentComponent || Content
 
   return (
+    {helmet || ''}
+    <section className="header-3 p-0">
+      <img src="assets/img/header-8.jpg" alt="Image" className="bg-image">
+      <div className="container">
+        <div className="row no-gutters justify-content-center justify-content-md-start">
+          <div className="col-10 col-md-8 col-lg-7 col-xl-6 bg-white spacer-y-4 height-60 height-md-70">
+            <div className="px-4">
+              <h1 className="display-4 d-block">
+              {title}
+              </h1>
+              <p className="lead">
+              {description}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="pb-2">
+      <div className="container">
+        <div className="row text-center mb-4">
+          <div className="col">
+            <span className="h2 d-block">A bold choice for your business.</span>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-6 col-md d-flex">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section className="section">
-      {helmet || ''}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
             <LocationContent content={content} />
           </div>
         </div>
