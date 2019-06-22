@@ -41,9 +41,6 @@ const Navbar = class extends React.Component {
               <Link to="/" className="nav-link" title="Logo">
                 <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
               </Link>
-            <button className="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".navMenu" aria-expanded="true" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-            </button>
             </div>
             <div className="navbar-collapse justify-content-between navMenu order-lg-2 collapse">
                 <div className="dropdown"></div>
