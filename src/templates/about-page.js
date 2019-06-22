@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const AboutPageTemplate = ({ title, description, content, fullImage, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -11,7 +10,7 @@ export const AboutPageTemplate = ({ title, description, content, fullImage, cont
   return (
     <div>
       <section className="bg-dark">
-        <img src={{${!!image.childImageSharp ? image.childImageSharp.fluid.src : image }}} alt={title} className="bg-image opacity-50" />
+      <PreviewCompatibleImage imageInfo={fullImage} className="bg-image opacity-50" />
         <div className="container height-lg-30">
           <div className="row">
             <div className="col-md-8 col-lg-7 col-xl-6">
