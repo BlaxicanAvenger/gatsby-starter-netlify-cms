@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
@@ -18,7 +19,7 @@ export const AboutPageTemplate = ({ title, description, content, fullImage, cont
               <nav aria-label="breadcrumb">
                 <ol className="breadcrumb p-0 bg-dark bg-transparent">
                   <li className="breadcrumb-item">
-                    <Link className="text-white" to="/">Overview</Link>
+                    <Link to="/" className="text-white">Overview</Link>
                   </li>
                   <li className="breadcrumb-item active text-white" aria-current="page">
                    {title}
