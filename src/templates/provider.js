@@ -25,7 +25,7 @@ export const ProviderTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
-            <ProvidertContent content={content} />
+            <ProviderContent content={content} />
           </div>
         </div>
       </div>
