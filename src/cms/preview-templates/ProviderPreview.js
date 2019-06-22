@@ -6,7 +6,7 @@ const ProviderPreview = ({ entry, widgetFor }) => (
   <ProviderTemplate
     content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}
-    name={entry.getIn(['data', 'name'])}
+    title={entry.getIn(['data', 'title'])}
   />
 )
 

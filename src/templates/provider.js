@@ -10,7 +10,7 @@ export const ProviderTemplate = ({
   content,
   contentComponent,
   description,
-  name,
+  title,
   helmet,
 }) => {
   const ProviderContent = contentComponent || Content
@@ -22,7 +22,7 @@ export const ProviderTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {name}
+              {title}
             </h1>
             <p>{description}</p>
             <ProvidertContent content={content} />
@@ -37,7 +37,7 @@ ProviderTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
-  name: PropTypes.string,
+  title: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -52,14 +52,14 @@ const Provider = ({ data }) => {
         description={provider.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Providers">
-            <title>{`${provider.frontmatter.name}`}</title>
+            <title>{`${provider.frontmatter.title}`}</title>
             <meta
-              name="description"
+              title="description"
               content={`${provider.frontmatter.description}`}
             />
           </Helmet>
         }
-        name={provider.frontmatter.name}
+        title={provider.frontmatter.title}
       />
     </Layout>
   )
@@ -79,7 +79,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        name
+        title
         description
       }
     }

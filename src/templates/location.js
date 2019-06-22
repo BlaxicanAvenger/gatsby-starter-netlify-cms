@@ -10,7 +10,7 @@ export const LocationTemplate = ({
   content,
   contentComponent,
   description,
-  name,
+  title,
   helmet,
 }) => {
   const LocationContent = contentComponent || Content
@@ -22,7 +22,7 @@ export const LocationTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {name}
+              {title}
             </h1>
             <p>{description}</p>
             <LocationtContent content={content} />
@@ -37,7 +37,7 @@ LocationTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
-  name: PropTypes.string,
+  title: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -52,14 +52,14 @@ const Location = ({ data }) => {
         description={location.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Locations">
-            <title>{`${location.frontmatter.name}`}</title>
+            <title>{`${location.frontmatter.title}`}</title>
             <meta
-              name="description"
+              title="description"
               content={`${location.frontmatter.description}`}
             />
           </Helmet>
         }
-        name={location.frontmatter.name}
+        title={location.frontmatter.title}
       />
     </Layout>
   )
@@ -79,7 +79,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        name
+        title
         description
       }
     }

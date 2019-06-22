@@ -6,7 +6,7 @@ const LocationPreview = ({ entry, widgetFor }) => (
   <LocationTemplate
     content={widgetFor('bio')}
     description={entry.getIn(['data', 'description'])}
-    name={entry.getIn(['data', 'name'])}
+    title={entry.getIn(['data', 'title'])}
   />
 )
 
