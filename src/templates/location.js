@@ -16,34 +16,51 @@ export const LocationTemplate = ({
   const LocationContent = contentComponent || Content
 
   return (
-    <section className="header-3 p-0">
+    <div>
         {helmet || ''}
-      <img className="bg-image" />
-      <div className="container">
-        <div className="row no-gutters justify-content-center justify-content-md-start">
-          <div className="col-10 col-md-8 col-lg-7 col-xl-6 bg-white spacer-y-4 height-60 height-md-70">
-            <div className="px-4">
-              <h1 className="display-4 d-block">
-              {title}
-              </h1>
-              <p className="lead">
-              {description}
-              </p>
+        <section className="header-3 p-0">
+        <img className="bg-image" />
+        <div className="container">
+            <div className="row no-gutters justify-content-center justify-content-md-start">
+            <div className="col-10 col-md-8 col-lg-7 col-xl-6 bg-white spacer-y-4 height-60 height-md-70">
+                <div className="px-4">
+                <h1 className="display-4 d-block">
+                {title}
+                </h1>
+                <p className="lead">
+                {description}
+                </p>
+                </div>
             </div>
-          </div>
+            </div>
         </div>
-      </div>
-    </section>
+        </section>
 
-    <section className="section">
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <LocationContent content={content} />
-          </div>
+        <section className="pb-2">
+        <div className="container">
+            <div className="row text-center mb-4">
+            <div className="col">
+                <span className="h2 d-block"></span>
+            </div>
+            </div>
+            <div className="row">
+            <div className="col-6 col-md d-flex">
+                
+            </div>
+            </div>
         </div>
-      </div>
-    </section>
+        </section>
+
+        <section className="section">
+        <div className="container content">
+            <div className="columns">
+            <div className="column is-10 is-offset-1">
+                <LocationContent content={content} />
+            </div>
+            </div>
+        </div>
+        </section>
+    </div>
   )
 }
 
