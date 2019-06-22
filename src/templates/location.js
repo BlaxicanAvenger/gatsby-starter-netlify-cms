@@ -25,7 +25,7 @@ export const LocationTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
-            <LocationtContent content={content} />
+            <LocationContent content={content} />
           </div>
         </div>
       </div>
