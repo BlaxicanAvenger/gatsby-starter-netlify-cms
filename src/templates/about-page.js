@@ -88,12 +88,12 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
-      }
-    }
-    full_image {
-      childImageSharp {
-        fluid(maxWidth: 2048, quality: 100) {
-          ...GatsbyImageSharpFluid
+        full_image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     }
