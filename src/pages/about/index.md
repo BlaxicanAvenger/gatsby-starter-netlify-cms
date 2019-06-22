@@ -1,19 +1,38 @@
 ---
-templateKey: 'about-page'
-path: /about
-title: About our values
+templateKey: about-page
+title: About Us
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+## The District
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Lompoc Valley Medical Center (LVMC), formerly known as Lompoc Healthcare District, is a healthcare district established in California and was created in 1946 by the Santa Barbara County Board of Supervisors. 
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+In 1945, the CA State Legislature enacted the "Local Hospital Care District Law" (California Health and Safety Code Sections 32000 et seq.) which authorized these districts to build and operate hospitals and other healthcare facilities in undeserved areas and to recruit and support physicians. LVMC is subject to state policies and regulations as applied by each county. LVMC is governed by its five locally elected Board members who are answerable to the voters of the district.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+The 463-square-mile district includes the city of Lompoc, Mission Hills, Mesa Oaks, Vandenberg Village, a portion of Vandenberg Air Force Base and the area east toward Buellton.
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+## Quality of Service
+
+LVMC has always committed itself to improving and developing healthcare services throughout the Lompoc Valley. The healthcare needs of Lompoc's citizens have grown drastically over the years and LVMC has grown with it. Our facilities are regulated, inspected, and/or certified by a number of public and private agencies at the state and federal levels, including the California Department of Public Health (CDPH) Licensing and Certification Program (L&C) and the U.S. Department of Health and Human Services’ Centers for Medicare and Medicaid Services (CMS). 
+
+LVMC is a founding member of The District Hospital Leadership Forum (DHLF) who represents California’s district and municipal hospital while providing expert leadership and advocacy in California and federal political realms.
+
+## Mission, Vision, and Values
+
+Our Mission, Vision and Values are who we are, what we do, what we will be and what guides our actions.
+
+### Our Core Values
+
+* Integrity – honesty and maintenance of strong moral principles
+* Respect – acknowledging everyone’s abilities, qualities, and achievements
+* Transparency – open and candid in all our activities
+* Excellence – accepting nothing less than our very best
+* Collaboration – working jointly and professionally in all our activities
+* Stewardship – responsible management of the resources entrusted to us
+
+### Our Mission
+
+Lompoc Valley Medical Center is a California Healthcare District committed to providing safe, high quality, compassionate and patient-centered healthcare services to our community.
+
+### Our Vision
+
+Lompoc Valley Medical Center, in collaboration with physicians, caregivers, and the community, is recognized as a leader in a coordinated healthcare delivery system through the provision of superior quality services in a healing environment. We plan for and act to produce an ever-improving healthy future for those whom we serve.
