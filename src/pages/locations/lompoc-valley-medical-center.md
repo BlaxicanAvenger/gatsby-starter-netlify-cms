@@ -10,7 +10,7 @@ description: >-
   1515 East Ocean Ave, Lompoc, CA 93436
 
   (805) 737-3300
-header: /img/location-lvmc-sm.jpg
+full_image: /img/location-lvmc-sm.jpg
 ---
 Located at 1515 E. Ocean Ave the 115,500-square-foot facility houses a 6-bed intensive care unit, a 6-bed perinatal department, and 48 general acute care beds.
 
