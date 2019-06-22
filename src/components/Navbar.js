@@ -34,63 +34,61 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-white">
         <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
+            <div className="d-flex order-lg-1">
+              <Link to="/" className="nav-link" title="Logo">
+                <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+              </Link>
+            <button className="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".navMenu" aria-expanded="true" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+            </button>
             </div>
-          </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
+            <div className="navbar-collapse justify-content-between navMenu order-lg-2 collapse">
+                <div className="dropdown"></div>
+                <ul className="navbar-nav d-flex flex-row">
+                    <li className="nav-item"></li>
+                    <li className="nav-item"></li>
+                    <li className="nav-item"></li>
+                </ul>
             </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div>
-          </div>
         </div>
-      </nav>
+    </nav>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light py-0 primary-menu" style="box-shadow: 0px 20px 20px rgba(0, 0, 0, .25);  border-top: 1px solid #ddd;">
+        <div className="container">
+          <div className="navbar-collapse navMenu collapse">
+            <ul className="navbar-nav nav-tabs border-0">
+              <li className="nav-item">
+                <Link className="nav-link" to="/providers">
+                  Find a Doctor
+                </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/locations">
+                    Locations
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/blog">
+                    Services
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/contact">
+                    Patient Resources
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/about">
+                    About Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     )
   }
 }
