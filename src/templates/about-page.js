@@ -3,15 +3,15 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import header from '../img/headers/about.png'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const AboutPageTemplate = ({ title, description, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, description, content, fullImage, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
     <div>
       <section className="bg-dark">
-        <img src={header} alt={title} className="bg-image opacity-50" />
+        <img src={{${!!image.childImageSharp ? image.childImageSharp.fluid.src : image }}} alt={title} className="bg-image opacity-50" />
         <div className="container height-lg-30">
           <div className="row">
             <div className="col-md-8 col-lg-7 col-xl-6">
@@ -54,8 +54,10 @@ export const AboutPageTemplate = ({ title, description, content, contentComponen
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  description: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
+  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 const AboutPage = ({ data }) => {
@@ -66,7 +68,9 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        description={post.frontmatter.description}
         content={post.html}
+        fullImage={frontmatter.full_image}
       />
     </Layout>
   )
@@ -84,6 +88,13 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+      }
+    }
+    full_image {
+      childImageSharp {
+        fluid(maxWidth: 2048, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }
