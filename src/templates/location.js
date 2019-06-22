@@ -10,6 +10,7 @@ export const LocationTemplate = ({
     content,  
     contentComponent,  
     description,  
+    fullImage,  
     title,  
     helmet, 
 }) => {
@@ -19,7 +20,7 @@ export const LocationTemplate = ({
     <div>
         {helmet || ''}
         <section className="header-3 p-0">
-        <img className="bg-image" />
+        <img src={fullImage} alt={title} className="bg-image" />
         <div className="container">
             <div className="row no-gutters justify-content-center justify-content-md-start">
             <div className="col-10 col-md-8 col-lg-7 col-xl-6 bg-white spacer-y-4 height-60 height-md-70">
@@ -70,6 +71,8 @@ LocationTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+
 }
 
 const Location = ({ data }) => {
@@ -112,6 +115,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
+        full_image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
       }
     }
   }

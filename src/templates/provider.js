@@ -7,10 +7,11 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 export const ProviderTemplate = ({
-  content,
-  contentComponent,
-  description,
-  title,
+    content,  
+    contentComponent,  
+    description,  
+    fullImage,  
+    title,  
   helmet,
 }) => {
   const ProviderContent = contentComponent || Content
@@ -39,6 +40,8 @@ ProviderTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+
 }
 
 const Provider = ({ data }) => {
@@ -81,6 +84,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
+        full_image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
       }
     }
   }
