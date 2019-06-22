@@ -5,7 +5,7 @@ description: >-
   We want to introduce you to Lompoc Health — North H Center. The building
   formerly owned by Sansum Clinic. Offering Urgent Care 12 hours a day and
   Lompoc's best healthcare providers.
-header: /img/download.jpg
+full_image: /img/download.jpg
 ---
 The building formerly called the Sansum Multi-Speciality Clinic at 1225 North H Street. At Lompoc Health, you’ll see many of the same fantastic staff and providers you have for the past decade – as well as many new faces. Lompoc Health – North H Street recognizes all Sansum insurance contracts, including HMO plans and CenCal Health.
 
