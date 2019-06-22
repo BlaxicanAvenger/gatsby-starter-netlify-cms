@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*!
- * Bootstrap v4.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 :root {
   --blue: #216aa6;
   --indigo: #6610f2;
@@ -7067,7 +7061,6 @@ body.compensate-for-scrollbar {
 .fancybox-stage {
   direction: ltr;
   overflow: visible;
-  -webkit-transform: translateZ(0);
   z-index: 99994; }
 
 .fancybox-is-open .fancybox-stage {
@@ -7687,7 +7680,6 @@ https://flickity.metafizzy.co
 
 .flickity-enabled.is-draggable {
   -webkit-tap-highlight-color: transparent;
-  tap-highlight-color: transparent;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -8245,7 +8237,6 @@ article pre[class*='language-'] {
 [class^="socicon-"], [class*=" socicon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'Socicon' !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -9500,8 +9491,6 @@ img.zoom-img {
   .demo-pages a {
     transition: opacity 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease; }
 
-/*# sourceMappingURL=theme.css.map */
-.primary-menu li.nav-item {}
 .primary-menu .navbar-nav {
   width: 100%;
   justify-content: space-evenly;
