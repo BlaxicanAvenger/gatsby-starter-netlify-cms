@@ -3,25 +3,52 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import header from '../img/headers/about.png'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, description, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+    <div>
+      <section className="bg-dark">
+        <img src={header} alt={title} className="bg-image opacity-50" />
+        <div className="container height-lg-30">
+          <div className="row">
+            <div className="col-md-8 col-lg-7 col-xl-6">
+              <nav aria-label="breadcrumb">
+                <ol className="breadcrumb p-0 bg-dark bg-transparent">
+                  <li className="breadcrumb-item">
+                    <Link className="text-white" to="/">Overview</Link>
+                  </li>
+                  <li className="breadcrumb-item active text-white" aria-current="page">
+                   {title}
+                  </li>
+                </ol>
+              </nav>
+              <h1 className="display-4 text-white">
                 {title}
-              </h2>
-              <PageContent className="content" content={content} />
+              </h1>
+              <p className="lead mb-0 text-white">
+              {description} 
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="section">
+
+                <PageContent className="content" content={content} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   )
 }
 
