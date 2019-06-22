@@ -2,14 +2,14 @@
 templateKey: location
 title: Lompoc Valley Medical Center
 description: >-
-  <p>Lompoc Valley Medical Center is Lompoc's hospital and the centerpiece of
+  Lompoc Valley Medical Center is Lompoc's hospital and the centerpiece of
   lompoc's healthcare. We are dedicated to creating the best experience possible
-  for our patients.</p>
+  for our patients.
 
 
-  <p>1515 East Ocean Ave, Lompoc, CA 93436<br />
+  1515 East Ocean Ave, Lompoc, CA 93436
 
-  (805) 737-3300</p>
+  (805) 737-3300
 header: /img/location-lvmc-sm.jpg
 ---
 Located at 1515 E. Ocean Ave the 115,500-square-foot facility houses a 6-bed intensive care unit, a 6-bed perinatal department, and 48 general acute care beds.
