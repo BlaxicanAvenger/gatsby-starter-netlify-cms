@@ -35,21 +35,6 @@ export const LocationTemplate = ({
       </div>
     </section>
 
-    <section className="pb-2">
-      <div className="container">
-        <div className="row text-center mb-4">
-          <div className="col">
-            <span className="h2 d-block"></span>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-6 col-md d-flex">
-            
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section className="section">
       <div className="container content">
         <div className="columns">
