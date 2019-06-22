@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import logo from '../img/lvmc-logo.png'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -39,8 +38,11 @@ const Navbar = class extends React.Component {
         <div className="container">
             <div className="d-flex order-lg-1">
               <Link to="/" className="nav-link" title="Logo">
-                <img src={logo} alt="Lompoc Valley Medical Center"  className="img-fluid" style={{ width: '88px' }} />
+                <img src={logo} alt="Kaldi" className="img-fluid" />
               </Link>
+            <button className="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".navMenu" aria-expanded="true" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+            </button>
             </div>
             <div className="navbar-collapse justify-content-between navMenu order-lg-2 collapse">
                 <div className="dropdown"></div>

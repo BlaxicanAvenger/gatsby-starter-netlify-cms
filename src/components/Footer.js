@@ -1,113 +1,80 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
-import logo from '../img/logo.svg'
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
+import logo from '../img/lvmc-logo.png'
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: '14em', height: '10em' }}
-          />
-        </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li>
-                  </ul>
-                </section>
+     
+      <div className="pageFooter">
+        <section className="footer-stripe pt-md-2 pb-md-2"><div className="container-fluid"><div className="row"><div className="col-md-12"></div></div></div></section>
+        <footer className="spacer-y-2 bg-dark">
+          <div className="container">
+              <div className="row">
+                  <div className="col-6 col-md-3 mb-3 mb-md-0">
+                      <h5 className="text-white">Locations</h5>
+                      <ul className="list-unstyled">
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Comprehensive Care Center</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Hematology-Oncology</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Lompoc Valley Medical Center</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">North H Center</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">North Third Center</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Orthopedic Center</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Sleep Disorder Center</Link> </li>
+
+                      </ul>
+
+                  </div>
+                  <div className="col-6 col-md-3 mb-3 mb-md-0">
+                      <h5 className="text-white">About Us</h5>
+                      <ul className="list-unstyled">
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Our Story</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Leadership Team</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Board of Directors</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Board Meeting Agendas</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">District Financials</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Municipal Service Review</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Mission Vision and Values</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Press</Link> </li>
+                      </ul>
+                  </div>
+                  <div className="col-12 col-md-3 mb-3 mb-md-0">
+                      <h5 className="text-white">Patient Resources</h5>
+                      <ul className="list-unstyled">
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Blog</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Health and Wellness Library</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Medical Records</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Event Calendar</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Patient Feedback</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Online Bill Pay</Link> </li>
+                          <li className="py-0 py-md-1"><Link className="text-white opacity-60">Patient and Family Advisory Council</Link> </li>
+                      </ul>
+                  </div>
+                  <div className="col-12 col-md-3">
+                      <h5 className="text-white">Find a Doctor</h5>
+                      <h5 className="text-white">Services</h5>
+                      <h5 className="text-white">Careers </h5>
+                  </div>
               </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
+              <div className="row mt-3 mt-md-4">
+                  <div className="col">
+                      <span className="text-small text-white">&copy; 2019 Lompoc Valley Medical Center.</span>
+                  </div>
               </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
+              <div className="row mt-3">
+                  <div className="col">
+                      <ul className="list-unstyled d-flex list-pipe-separator">
+                          <li><Link className="text-small text-white opacity-50">Privacy Policy</Link> </li>
+                          <li><Link className="text-small text-white opacity-50">Terms and Conditions</Link> </li>
+                          <li><Link className="text-small text-white opacity-50">Information Statement</Link> </li>
+                          <li><Link className="text-small text-white opacity-50">Sitemap</Link> </li>
+                      </ul>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
       </footer>
+    </div>
+
     )
   }
 }
