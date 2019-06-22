@@ -7,7 +7,6 @@ const LocationPreview = ({ entry, widgetFor }) => (
     content={widgetFor('bio')}
     description={entry.getIn(['data', 'description'])}
     title={entry.getIn(['data', 'title'])}
-    fullImage={entry.getIn(['data', 'full_image'])}
 
   />
 )
